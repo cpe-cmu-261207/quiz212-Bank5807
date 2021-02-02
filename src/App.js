@@ -1,3 +1,7 @@
+import { render } from "@testing-library/react";
+import React from "react";
+import { useState } from "react";
+
 function App() {
   const persons = [
     {
@@ -13,33 +17,41 @@ function App() {
   ];
   return (
     <div class="ml-2">
-      {/* Code me please! */}
+      {
       <div class="mb-4">
         <h3 class="title is-3">ID Counter</h3>
-        <p>YOUR ID HERE</p>
+        <p>620610787</p>
         <button>-</button>
         <button>reset</button>
         <button>+</button>
       </div>
+    
+      //{ function Counter = () => {
+      //  const [Counter, setCounter] = useState(0)
+      //  return <button setCounter =>
+      //    +
+      //    </button>
+      //  }
+     // }
 
-      {/* Convert me to a component! */}
-      <h3 class="title is-3">Person List</h3>
-      <table class="table is-bordered mb-3">
-        <tbody>
-          <tr>
-            <th>Name</th>
-            <th>Gender</th>
-            <th>Age</th>
-          </tr>
-          <tr>
-            <td>Bob</td>
-            <td>male</td>
-            <td>50</td>
-          </tr>
-        </tbody>
+      { function component = ( persons ) => {
+        render() = () => {
+         <table class="table is-bordered mb-3">
+          <tbody>
+            <tr>
+              <th>Name</th>
+              <th>Gender</th>
+              <th>Age</th>
+            </tr>
+            <tr id='persons'>
+              <th>{ name }</th>
+              <th>{ gender }</th>
+              <th>{ age } </th> 
+            </tr>
+          </tbody>
       </table>
-    </div>
-  );
+      }
+    );
+  }
 }
-
 export default App;
